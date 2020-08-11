@@ -3,3 +3,66 @@
     color: rebeccapurple;
 }
 
+h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.card{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+
+}
+
+.comment-widgets{
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.comment-widgets .comment-row{
+    border-bottom: 1px solid transparent;
+    padding: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0;
+}
+
+.p-2{
+    padding: 0.5rem !important;
+}
+
+.comment-text{
+    padding-left: 15px;
+    width: 100%;
+}
+.comment-widgets .comment-row:hover {
+    background: rgba(0, 0, 0, 0.05)
+}
+
+.text-muted{
+    float: right;
+}
+
+.comment-footer{
+    width: 100%;
+}
+
+.btn-cyan {
+    color: #fff;
+    background-color: #27a9e3;
+    border-color: #27a9e3;
+    margin-top: 5px;
+    
+}
