@@ -114,13 +114,71 @@
   <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
 </div>
 
+<hr><hr>
+
+<div class="container mt-3">
+  <p>Unsite ime za pretragu: </p>
+  <input type="text" class="form-control" id="myInput" placeholder="Search...">
+  <br><br>
+  <table class="table table-bordered">
+    <thead>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Marko</td>
+        <td>Markovic</td>
+        <td>maka@maka.com</td>
+      </tr>
+      <tr>
+        <td>Nikola</td>
+        <td>Nikolic</td>
+        <td>nidzo@nidzo.com</td>
+      </tr>
+      <tr>
+        <td>Petra</td>
+        <td>Petrovic</td>
+        <td>peki@peki.com</td>
+      </tr>
+      <tr>
+        <td>Marko</td>
+        <td>Jovanovic</td>
+        <td>jova@jova.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
 
-
+<script>
+  $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
 
 
 
